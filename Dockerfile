@@ -1,0 +1,12 @@
+
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package.json .
+
+COPY server.js .
+
+EXPOSE 10000
+
+CMD ["npm", "start"]
